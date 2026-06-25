@@ -39,7 +39,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 .nav-brand{font-size:15px;font-weight:600;color:#fff}
 .nav-links{display:flex;gap:28px;list-style:none;align-items:center}
 .nav-links a:not(.btn){color:var(--soft);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
-.nav-links a:not(.btn):hover{color:var(--text)}
+.nav-links a:not(.btn):hover{color:#fff}
 
 /* ── BUTTONS ── */
 .btn{
@@ -390,11 +390,11 @@ footer{
 .form-group input,.form-group select,.form-group textarea{
   width:100%;background:var(--bg);border:1px solid var(--border);
   border-radius:7px;padding:12px 14px;
-  color:var(--text);font-family:var(--font);font-size:14px;
+  color:#fff;font-family:var(--font);font-size:14px;
   outline:none;transition:border-color .2s,box-shadow .2s;
   -webkit-appearance:none;
 }
-.form-group select{cursor:pointer;color:#fff}
+.form-group select{cursor:pointer;color:#fff;-webkit-text-fill-color:#fff}
 .form-group select option{background:var(--panel);color:#fff}
 .form-group textarea{resize:vertical;min-height:110px;line-height:1.6}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
