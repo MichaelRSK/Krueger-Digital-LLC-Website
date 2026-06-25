@@ -394,7 +394,7 @@ footer{
   outline:none;transition:border-color .2s,box-shadow .2s;
   -webkit-appearance:none;
 }
-.form-group select{cursor:pointer}
+.form-group select{cursor:pointer;color:#fff}
 .form-group select option{background:var(--panel);color:#fff}
 .form-group textarea{resize:vertical;min-height:110px;line-height:1.6}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
@@ -867,7 +867,7 @@ const links = document.querySelectorAll('.nav-links a[href^="#"]');
 window.addEventListener('scroll', () => {
   let cur = '';
   sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
-  links.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--text)' : ''; });
+  links.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? '#fff' : ''; });
 });
 
 /* ── CARD TILT ── */
